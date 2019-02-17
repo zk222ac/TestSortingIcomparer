@@ -10,12 +10,41 @@ namespace TestSorting
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
+            List<Person> persons = new List<Person>()
+            {
+                new Person(99, "adam" ,100),
+                new Person(44, "mike" ,34),
+                new Person(33, "john" ,33),
+                new Person(11, "peter" ,44),
+                new Person(43, "steen" ,55),
+                new Person(11, "poul" ,22),
+                new Person(1, "lars" ,77),
+
+            };
+            
+            Print(persons);
+            Console.WriteLine("Sorting By Id");
+            persons.Sort(new PersonIdComparator());
+            Print(persons);
+            Console.WriteLine("Sorting By Name");
+            persons.Sort(new PersonNameComparator());
+            Print(persons);
+            Console.WriteLine("Sorting By Age");
+            persons.Sort(new PersonAgeComparator());
+            Print(persons);
+
             Console.ReadKey();
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+        }
+
+        static void Print(List<Person> persons)
+        {
+            foreach (var p in persons)
+            {
+                Console.WriteLine(p);
+            }
+
+            Console.WriteLine(".......................");
         }
     }
 }

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSorting", "TestSorting\TestSorting.csproj", "{E3FCF6CB-461E-4981-A28C-9D6653B8B79D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSortingIComparer", "TestSorting\TestSortingIComparer.csproj", "{E3FCF6CB-461E-4981-A28C-9D6653B8B79D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
